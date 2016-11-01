@@ -1,0 +1,8 @@
+{
+  "name": "Gomoku",
+  "version": "0.0.1",
+  "description": "Multiplayer gomoku",
+  "dependencies": {
+    "express": "^4.10.2"
+  }
+}

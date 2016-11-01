@@ -1,5 +1,10 @@
-var http = require('http');
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('Now with auto deploy...\n');
-}).listen(8080, '64.137.255.190');
+var app = require('express')();
+var http = require('http').Server(app);
+
+app.get('/', function(req, res){
+  res.send('<h1>Hello world</h1>');
+});
+
+http.listen(8080, function(){
+  //console.log('listening on *:8080');
+});
